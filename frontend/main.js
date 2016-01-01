@@ -6,7 +6,7 @@
 
   var App = require("./containers/app");
   var DemoCharts = require("./containers/charts");
-  //var DemoGraphs = require("./containers/graphs");
+  var DemoGraphs = require("./containers/graphs");
   var NotFound = require("./containers/not-found");
 
   //var injectTapEventPlugin = require("react-tap-event-plugin");
@@ -20,9 +20,11 @@
   var NotFoundRoute = Router.NotFoundRoute;
 
   // Declare routes
+
   var routes = (
     <Route path="/" handler={App}>
       <Route name="charts" path="/charts" handler={DemoCharts} />
+      <Route name="graphs" path="/graphs" handler={DemoGraphs} />
       <DefaultRoute handler={DemoCharts} />
       <NotFoundRoute handler={NotFound} />
     </Route>
