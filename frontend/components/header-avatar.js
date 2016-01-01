@@ -4,9 +4,9 @@ module.exports = React.createClass({
   render: function() {
     return (
       <header className="demo-drawer-header">
-        <img src="images/user.jpg" className="demo-avatar"/>
+        <img src="https://en.gravatar.com/userimage/99124354/49dde5d6cd47662d3108ab03f78ad239.jpeg" className="demo-avatar"/>
         <div className="demo-avatar-dropdown">
-          <span>hello@example.com</span>
+          <span>andrew@odewahn.com.com</span>
           <div className="mdl-layout-spacer"></div>
           <button id="accbtn" className="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
             <i className="material-icons" role="presentation">arrow_drop_down</i>
