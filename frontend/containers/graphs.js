@@ -5,7 +5,9 @@ var DemoGraphs = require('../components/demo-graphs')
 module.exports = React.createClass({
   render: function() {
     return (
-      <DemoGraphs />      
+      <div>
+        <DemoGraphs />         
+      </div>
     )
   }
 })
