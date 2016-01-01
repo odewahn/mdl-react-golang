@@ -1,11 +1,11 @@
 var React = require('react')
-
+var DemoText = require('../components/demo-text')
 
 module.exports = React.createClass({
   render: function() {
     return (
-      <div className="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-        hello!
+      <div>
+        <DemoText />
       </div>
     )
   }
