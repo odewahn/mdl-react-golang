@@ -7,6 +7,8 @@
   var App = require("./containers/app");
   var DemoCharts = require("./containers/charts");
   var DemoText = require("./containers/text");
+  var Account = require("./containers/account-setup");
+
   var Dashboard = require("./containers/dashboard");
 
   var NotFound = require("./containers/not-found");
@@ -28,6 +30,8 @@
       <Route name="dashboard" path="/dashboard" handler={Dashboard} />
       <Route name="charts" path="/charts" handler={DemoCharts} />
       <Route name="text" path="/text" handler={DemoText} />
+        <Route name="account" path="/acount" handler={Account} />
+
       <DefaultRoute handler={Dashboard} />
       <NotFoundRoute handler={NotFound} />
     </Route>
