@@ -24,9 +24,10 @@ module.exports = React.createClass({
     handle = this
     $.ajax({
       type: "GET",
-      url: "data.json",
+      url: "https://raw.githubusercontent.com/odewahn/mdl-react-golang/master/backend/public/data.json",
       success: function(result) {
-        handle.setState(result)
+        var dat = JSON.parse(result)
+        handle.setState(dat)
       },
       error: function(jqXHR, status, err) {
         console.log("It failed because of", status)
