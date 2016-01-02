@@ -18,7 +18,7 @@ module.exports = React.createClass({
     this.setState(s)
   },
   componentDidMount: function() {
-    // This fetches some data using jquery and sets the detaul values in the component's local state
+    // This fetches some data using jquery and sets the default values in the component's local state
     // In theory, this should all be done with Flux/redux, but man, does this Javasctipt framework
     // clusterfuck *ever* end?  How do people stand it?
     handle = this
